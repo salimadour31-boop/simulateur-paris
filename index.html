@@ -1,0 +1,10 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SimuParis — simulateur de paris (argent virtuel)</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="banner">⚠️ Simulation — aucun argent réel. Les paris réels font perdre en moyenne.</div>
+<header><div class="logo">Simu<b>Paris</b></div><nav>
+<button data-v="sport" class="on">Sports</button><button data-v="live">En direct</button><button data-v="hist">Historique</button><button data-v="stats">Statistiques</button><button data-v="bt">Backtest</button><button data-v="about">À propos</button></nav>
+<div class="bal">Solde : <b id="bal">…</b> DA virtuels <button id="reset" title="Réinitialiser">↺</button></div></header>
+<div class="wrap"><aside id="side"></aside><main id="main"><p>Chargement des données (openfootball)…</p></main>
+<section id="slip"><h3>Coupon</h3><div class="tabs"><button id="mS" class="on">Simple</button><button id="mA">Combiné</button></div><div id="slipBody"></div></section></div>
+<footer>Logiciel libre (MIT). Données : <a href="https://github.com/openfootball/football.json">openfootball/football.json</a> (domaine public). Cotes générées par un modèle de Poisson avec marge de 6 %. Aucun lien vers un bookmaker, aucune publicité, aucun traçage. Si le jeu devient un problème : demandez de l'aide.</footer>
+<script src="app.js"></script></body></html>
